@@ -21,23 +21,23 @@ Tools & Technologies
   - VS Code - Code editor used during development
   - Command Line (CLI) - For running and testing the script
 
-Setup & Installation
-# In your CLI, clone the repository
+# Setup & Installation
+In your CLI, clone the repository
 git clone
 https://github.com/gavin-main/log-parser
 
-# Navigate into the project
+Navigate into the project
 cd log-parser
 
-# Check that you have the latest version of Python installed
+Check that you have the latest version of Python installed
 Python3 --version
 
-# Run the script
+Run the script
 	Python3 parser.py
 
-# These instructions will use the auth.log file provided in the sample_logs directory, but you can also create your own sample log file and place it in the sample_logs directory to be used by the log parser.
+These instructions will use the auth.log file provided in the sample_logs directory, but you can also create your own sample log file and place it in the sample_logs directory to be used by the log parser.
 
-Usage Examples
+# Usage Examples
 ![Running program in CLI Step-by-Step](images\CLI-instructions.png)
 Description: Using Windows CLI to clone Git Repository, navigate to the project directory, check for Python3, and run the log parser script.
 
@@ -47,7 +47,7 @@ Description: This screenshot displays the contents of the sample log I created i
 ![Parser Script](images\parser-script)
 Description: This screenshot shows the contents of the python script used to parse log files.
 
-Project Structure
+# Project Structure
 log-parser\
 |---sample_logs\                 # Directory containing sample log file
 |---|---auth.log                 # Sample log file with failed SSH login attempts
@@ -58,10 +58,10 @@ log-parser\
 |---parser.py                    # Log Parser Script
 |---README.md                    # Project description
 
-Security Context / Learning Outcomes
+# Security Context / Learning Outcomes
   This project highlights important cybersecurity concepts like log monitoring and intrusion detection by analyzing SSH logs for failed login attempts. It demonstrates how identifying suspicious IP addresses through log parsing can reveal potential brute-force attacks or unauthorized access attempts. While simple, this script reflects the basic process behind real-world security tools like SIEMs that collect and analyze logs to detect threats. Working on this project helped me build practical skills in analyzing security logs and understanding how defenders use data to spot indicators of compromise, which is essential for roles in SOC analysis and threat hunting.
 
-Future Improvements
+# Future Improvements
  1. Add geo-IP lookup to show where the attackers are coming from
  2. Save results to a CSV or JSON file for analysis
  3. Whitelist internal IPs or known addresses
