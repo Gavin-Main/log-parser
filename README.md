@@ -49,15 +49,15 @@ Description: This screenshot shows the contents of the python script used to par
 
 # Project Structure
 log-parser\
-|
+
 |---sample_logs\     #Directory containing sample log file
-|
+
 ||---auth.log        #Sample log file with failed SSH login attempts
-|
+
 |---images\          #Directory containing screenshots
-|
+
 |---parser.py        #Log Parser Script
-|
+
 |---README.md        #Project description
 
 # Security Context / Learning Outcomes
