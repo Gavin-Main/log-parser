@@ -1,8 +1,8 @@
-# log-parser
-Overview
+# Project: log-parser
+# Overview
   This project is a basic SSH log parser built in Python, designed to detect and report failed login attempts from system log files (e.g., /var/log/auth.log). It solves the problem of manually sifting through large volumes of logs by automatically extracting and counting failed SSH login attempts per IP address. This is highly relevant in cybersecurity as it helps identify brute-force attacks or unauthorized access attempts. The tool provides a quick snapshot of potentially malicious activity, making it valuable for SOC analysts, incident responders, and learners who are developing foundational skills in log analysis, threat detection, and Python scripting.
 
-Features
+# Features
   - Parses SSH log files to detect failed login attempts
   - Uses regular expressions to accurately extract IP addresses from
     failed log entries
@@ -13,7 +13,7 @@ Features
   - Beginner-friendly Python code that is easy to understand and modify
   - Useful for basic intrusion detection or log analysis practice
     
-Tools & Technologies
+# Tools & Technologies
   - Python 3 - Main programming language used for scripting and log parsing
   - Regular Expressions (re module) - for pattern matching and extracting IP addresses from logs
   - Collections.defaultdict - To simplify counting failed login attempts
@@ -49,22 +49,16 @@ Description: This screenshot shows the contents of the python script used to par
 
 # Project Structure
 log-parser\
-
-|---sample_logs\  --> Directory containing sample log file
-
-|---|---auth.log  --> Sample log file with failed SSH login attempts
-
-|---images\       --> Directory containing screenshots
-
-|---|---auth.log-contents.png   --> Contents of sample log
-
-|---|---CLI-instructions.png    --> Command Line Steps
-
-|---|---parser-script.png        --> Python file contents
-
-|---parser.py                    --> Log Parser Script
-
-|---README.md                    --> Project description
+|
+|---sample_logs\     #Directory containing sample log file
+|
+||---auth.log        #Sample log file with failed SSH login attempts
+|
+|---images\          #Directory containing screenshots
+|
+|---parser.py        #Log Parser Script
+|
+|---README.md        #Project description
 
 # Security Context / Learning Outcomes
   This project highlights important cybersecurity concepts like log monitoring and intrusion detection by analyzing SSH logs for failed login attempts. It demonstrates how identifying suspicious IP addresses through log parsing can reveal potential brute-force attacks or unauthorized access attempts. While simple, this script reflects the basic process behind real-world security tools like SIEMs that collect and analyze logs to detect threats. Working on this project helped me build practical skills in analyzing security logs and understanding how defenders use data to spot indicators of compromise, which is essential for roles in SOC analysis and threat hunting.
